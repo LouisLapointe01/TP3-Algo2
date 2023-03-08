@@ -1,12 +1,9 @@
 /*
  * Interface d'une pile statique.
- * Copyright (c) 2009-10 - Université Paul Sabatier
- * 
- * Vincent Dugat 2009-2010
- * H. Cassé, 2018
+ * Copyright (c) 2009-10 - UniversitÃ© Paul Sabatier
  */
 
-/* Pour éviter les inclusions multiples */
+/* Pour Ã©viter les inclusions multiples */
 #ifndef PILE_H
 #define PILE_H
 
@@ -16,7 +13,7 @@
 
 
 /* ----------------------------------
-        Déclaration des types
+        DÃ©claration des types
    --------------------------------*/
 typedef struct pile_t {
     int elts[PILE_TAILLE];
@@ -29,24 +26,24 @@ typedef struct pile_t {
    --------------------------------*/
 
 /**
- * Crée une pile vide.
- * @param p	Pile à initializer.
+ * CrÃ©e une pile vide.
+ * @param p	Pile Ã  initializer.
  */
 void init_pile(pile_t *p);
 
 /**
- * Empile un élément dans la pile.
- * La pile ne doit pas être pleine.
- * @param p		Pile où empiler.
- * @param e		Elément à empiler.
+ * Empile un Ã©lÃ©ment dans la pile.
+ * La pile ne doit pas Ãªtre pleine.
+ * @param p		Pile oÃ¹ empiler.
+ * @param e		ElÃ©ment Ã  empiler.
  */
 void empiler(pile_t *p, int e);
 
 
 /**
- * Dépile l'élément en tête de pile.
- * La pile ne doit pas être vide !
- * @param p	Pile à dépiler.
+ * DÃ©pile l'Ã©lÃ©ment en tÃªte de pile.
+ * La pile ne doit pas Ãªtre vide !
+ * @param p	Pile Ã  dÃ©piler.
  */
 void depiler(pile_t *p);
 
@@ -56,30 +53,30 @@ void depiler(pile_t *p);
    --------------------------------*/
 
 /**
- * Récupère le sommet de pile.
- * La pile ne doit pas être vide !
- * @param p		Pile à accéder.
- * @return		Elément en tête de pile.
+ * RÃ©cupÃ¨re le sommet de pile.
+ * La pile ne doit pas Ãªtre vide !
+ * @param p		Pile Ã  accÃ©der.
+ * @return		ElÃ©ment en tÃªte de pile.
  */
 int sommet(const pile_t *p);
 
 /**
  * Teste si la pile est vide.
- * @param p		Pile à tester.
+ * @param p		Pile Ã  tester.
  * @return		TRUE si la pile est vide, FALSE sinon.
  */
 bool pile_vide(const pile_t *p);
  
 /**
  * Test si la pile est elle pleine.
- * @param p		Pile à etster.
+ * @param p		Pile Ã  etster.
  * @return		TRUE si la pile est pleine, FALSE sinon.
  */
 bool pile_pleine(const pile_t *p);
 
 /**
  *  Affiche le contenu de la pile sur la stortie standard.
- * @param p		Pile à afficher.
+ * @param p		Pile Ã  afficher.
  */
 void afficher_pile(const pile_t *p);
 
